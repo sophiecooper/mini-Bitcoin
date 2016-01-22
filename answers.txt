@@ -1,0 +1,23 @@
+Sophia Cooper 23440100 cs161-ao
+Loretta Chan 23844320 cs161-fu
+
+
+1.	As of 11:39 10/27/2015, the current Bitcoin difficulty is 60883825480.
+
+2. 	On my machine, it takes 60 seconds on average to compute a block. 
+
+3. 	With difficulty 60883825480, you need to try (60883825480 * 2^32) different hashes
+	before mining a bitcoin block.
+
+	Our hashrate is the amount of time it takes to do 1 hash operation.
+	We can compute this as (#of hashes to mine a block / time to mine a block) 
+	= 2^24/60 = 279620.266667 hashes/second
+
+	It would take us ((60883825480 * 2^32) / 279620.266667) = 9.3517645e+14 seconds to mine a Bitcoin block.
+	So it would take us close to 10^13 minutes to mine a Bitcoin block (10823801518 days)
+
+
+4.	DES key is 56 bits long.
+	The Bitcoin network takes 10 minutes to compute (60883825480 * 2^32) hashes
+	Therefore, to compute 2^56 hashes, Bitcoin network would take
+	600s / ((60883825480 * 2^32) / 2^56) = 0.16533668 seconds.
